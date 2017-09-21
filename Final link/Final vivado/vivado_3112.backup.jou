@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 16 18:45:51 2016
+# Process ID: 3112
+# Current directory: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8496 D:\Dropbox\共享\FlipLD\課前準備\LAB文件\Final Project\Final link\Final vivado\FinalProject.xpr
+# Log file: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado/vivado.log
+# Journal file: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado/FinalProject.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1

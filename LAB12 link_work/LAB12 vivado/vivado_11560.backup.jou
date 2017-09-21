@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 29 14:11:38 2016
+# Process ID: 11560
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB12 link_work/LAB12 vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14800 C:\Users\Albert\Desktop\logic  design\LAB12 link_work\LAB12 vivado\LAB12.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB12 link_work/LAB12 vivado/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB12 link_work/LAB12 vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/LAB12 link_work/LAB12 vivado/LAB12.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 

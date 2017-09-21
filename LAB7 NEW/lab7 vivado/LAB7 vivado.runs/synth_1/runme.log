@@ -1,0 +1,466 @@
+
+*** Running vivado
+    with args -log LAB7.vds -m64 -mode batch -messageDb vivado.pb -notrace -source LAB7.tcl
+
+[0x7FFB550E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source LAB7.tcl -notrace
+Command: synth_design -top LAB7 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5472 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module INV [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:14]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:38]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:51]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR3 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:63]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR4 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:75]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:87]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND3 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:99]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND4 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:111]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:124]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR3 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:137]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR4 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:150]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XOR2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:162]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XNOR2 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:174]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 284.148 ; gain = 76.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB7' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/LAB7.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'ck0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/LAB7.v:35]
+INFO: [Synth 8-638] synthesizing module 'SSDR' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:80]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:106]
+INFO: [Synth 8-638] synthesizing module 'MUX21' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:201]
+INFO: [Synth 8-256] done synthesizing module 'MUX21' (2#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:201]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:107]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:187]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (3#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lib.v:187]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:110]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:111]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:113]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:114]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:116]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:117]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:119]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:120]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:122]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:123]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:125]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:126]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:128]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:129]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:131]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:132]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:134]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:135]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:137]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:138]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:140]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:141]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:143]
+INFO: [Synth 8-638] synthesizing module 'ssDecoder' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ssDecoder' (4#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:6]
+WARNING: [Synth 8-3848] Net reset in module/entity SSDR does not have driver. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:107]
+INFO: [Synth 8-256] done synthesizing module 'SSDR' (5#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:80]
+INFO: [Synth 8-638] synthesizing module 'ssDisplayer' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ssDisplayer' (6#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'LAB7' (7#1) [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/LAB7.v:6]
+WARNING: [Synth 8-3917] design LAB7 has port led[1] driven by constant 1
+WARNING: [Synth 8-3331] design SSDR has unconnected port rst
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[0]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port sw[12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 302.984 ; gain = 94.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line107:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:107]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line111:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:111]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line114:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:114]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line117:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:117]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line120:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:120]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line123:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:123]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line126:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:126]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line129:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:129]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line132:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:132]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line135:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:135]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line138:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:138]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line141:RESET to constant 0 [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/SSDR.v:141]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 302.984 ; gain = 94.977
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'ck0' [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/lab7/don't touch/LAB7.v:35]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/dcp/clk_wiz_0_in_context.xdc] for cell 'ck0'
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/dcp/clk_wiz_0_in_context.xdc] for cell 'ck0'
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc:147]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/LAB7_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 prob/PortDefine_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB7_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB7_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 601.063 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/dcp/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Albert/Desktop/logic  design/LAB7 NEW/lab7 vivado/LAB7 vivado.runs/synth_1/.Xil/Vivado-11100-UX303L/dcp/clk_wiz_0_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MUX21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ssDisplayer 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design LAB7 has port led[1] driven by constant 1
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port led[0]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB7 has unconnected port sw[12]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 601.063 ; gain = 393.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ck0/clk_out1' to pin 'ck0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 601.063 ; gain = 393.055
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |     5|
+|3     |LUT1      |    17|
+|4     |LUT2      |     4|
+|5     |LUT3      |    40|
+|6     |MUXF7     |    14|
+|7     |MUXF8     |     7|
+|8     |FDCE      |    17|
+|9     |FDPE      |    11|
+|10    |FDRE      |    12|
+|11    |IBUF      |    14|
+|12    |OBUF      |    12|
+|13    |OBUFT     |    15|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   170|
+|2     |  ssdp1             |ssDisplayer |    54|
+|3     |  ssdr1             |SSDR        |    73|
+|4     |    nolabel_line107 |DFF         |     7|
+|5     |    nolabel_line111 |DFF_0       |     3|
+|6     |    nolabel_line114 |DFF_1       |     3|
+|7     |    nolabel_line117 |DFF_2       |     7|
+|8     |    nolabel_line120 |DFF_3       |     3|
+|9     |    nolabel_line123 |DFF_4       |     3|
+|10    |    nolabel_line126 |DFF_5       |    12|
+|11    |    nolabel_line129 |DFF_6       |     4|
+|12    |    nolabel_line132 |DFF_7       |     4|
+|13    |    nolabel_line135 |DFF_8       |    17|
+|14    |    nolabel_line138 |DFF_9       |     5|
+|15    |    nolabel_line141 |DFF_10      |     5|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.063 ; gain = 393.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 601.063 ; gain = 94.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 601.063 ; gain = 393.055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 117 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 601.063 ; gain = 393.055
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 601.063 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 18:08:36 2016...
+[0x7FFB550E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)

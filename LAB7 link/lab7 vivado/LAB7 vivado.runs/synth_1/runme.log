@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log LAB7.vds -m64 -mode batch -messageDb vivado.pb -notrace -source LAB7.tcl
+
+[0x7FFB550E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source LAB7.tcl -notrace
+ERROR: [Common 17-275] File does not exist [C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/PortDefine_basys3.xdc]
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 17:08:10 2016...
+[0x7FFB550E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)

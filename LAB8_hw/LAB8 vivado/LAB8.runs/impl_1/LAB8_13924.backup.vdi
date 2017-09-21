@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 23 16:37:20 2016
+# Process ID: 13924
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB8_hw_wrong/LAB8 vivado/LAB8.runs/impl_1
+# Command line: vivado.exe -log LAB8.vdi -applog -messageDb vivado.pb -mode batch -source LAB8.tcl -notrace
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB8_hw_wrong/LAB8 vivado/LAB8.runs/impl_1/LAB8.vdi
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB8_hw_wrong/LAB8 vivado/LAB8.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source LAB8.tcl -notrace
+Command: open_checkpoint LAB8_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 207.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1

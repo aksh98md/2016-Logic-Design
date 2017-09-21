@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 08 23:21:39 2016
+# Process ID: 4248
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7324 C:\Users\Albert\Desktop\logic  design\LAB7 link\lab7 vivado\LAB7 vivado.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado/LAB7 vivado.xpr}
+update_compile_order -fileset sources_1

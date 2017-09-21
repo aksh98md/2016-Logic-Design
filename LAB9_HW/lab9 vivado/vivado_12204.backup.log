@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 08 21:39:24 2016
+# Process ID: 12204
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5180 C:\Users\Albert\Desktop\logic  design\LAB9_HW\lab9 vivado\LAB9.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/TADuty/105-1 Flip Logic Design/Preparation/LAB Doc/LAB9/LAB9' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'LAB9.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 796.066 ; gain = 115.969
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 15:38:54 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 15:38:54 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 15:40:09 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 15:40:09 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+[0x7FFF273B70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+[0x7FFF273B70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A286B4A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A286B4A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A286B4A
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 15:52:01 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A286B4A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A286B4A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:12:10 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:12:10 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:15:42 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:19:44 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:19:44 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:23:26 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:23:41 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:23:41 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:26:52 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:27:01 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:27:01 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:30:24 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:30:41 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:30:41 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:35:04 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:35:18 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:35:18 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:45:30 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:46:01 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:46:01 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:49:30 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:49:48 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:49:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 16:56:11 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 16:56:20 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 16:56:20 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:04:12 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:04:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:04:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:14:52 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:15:29 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:15:29 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:22:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:22:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run synth_1 -noclean_dir 
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:22:42 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:22:42 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:26:10 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:26:32 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:26:32 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:31:55 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:32:39 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:32:39 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:35:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:35:56 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:35:56 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:40:21 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:48:56 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:48:56 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:49:15 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:49:15 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 17:53:37 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 17:54:11 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 17:54:11 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:01:32 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:01:45 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:01:45 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:05:25 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:05:43 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:05:43 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:08:14 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:08:27 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:08:27 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:08:57 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:08:57 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:19:14 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:19:31 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:19:31 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:25:34 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:25:55 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:25:55 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:27:28 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:27:57 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:27:57 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Dec 09 18:37:45 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Dec 09 18:39:05 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/synth_1/runme.log
+[Fri Dec 09 18:39:05 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/LAB9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/impl_1/LAB9.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A286B4A
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 09 18:42:14 2016...

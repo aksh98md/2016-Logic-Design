@@ -1,0 +1,532 @@
+
+*** Running vivado
+    with args -log LAB11.vds -m64 -mode batch -messageDb vivado.pb -notrace -source LAB11.tcl
+
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source LAB11.tcl -notrace
+Command: synth_design -top LAB11 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10192 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module INV [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:14]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:38]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:51]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR3 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:63]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR4 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:75]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:87]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND3 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:99]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND4 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:111]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:124]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR3 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:137]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR4 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:150]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XOR2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:162]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XNOR2 [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:174]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:6]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 283.531 ; gain = 76.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB11' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/LAB11.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'ck0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/LAB11.v:49]
+INFO: [Synth 8-638] synthesizing module 'ButtonFSM' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ButtonFSM.v:7]
+	Parameter S_0 bound to: 3'b000 
+	Parameter S_1 bound to: 3'b001 
+	Parameter S_2 bound to: 3'b010 
+	Parameter S_3 bound to: 3'b011 
+	Parameter S_4 bound to: 3'b100 
+	Parameter S_5 bound to: 3'b101 
+	Parameter S_6 bound to: 3'b110 
+	Parameter S_7 bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ButtonFSM.v:41]
+INFO: [Synth 8-256] done synthesizing module 'ButtonFSM' (2#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ButtonFSM.v:7]
+INFO: [Synth 8-638] synthesizing module 'BP_TimerController' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:9]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:187]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (3#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/lib.v:187]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:91]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:92]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:93]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:94]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:95]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:96]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:97]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:98]
+INFO: [Synth 8-256] done synthesizing module 'BP_TimerController' (4#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/BP_TimerController.v:9]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/SevenSegment.v:5]
+INFO: [Synth 8-638] synthesizing module 'ssDecoder' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ssDecoder.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ssDecoder' (5#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ssDecoder.v:5]
+INFO: [Synth 8-638] synthesizing module 'ssDisplayer' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ssDisplayer' (6#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (7#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/SevenSegment.v:5]
+INFO: [Synth 8-256] done synthesizing module 'LAB11' (8#1) [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/LAB11.v:6]
+WARNING: [Synth 8-3917] design LAB11 has port led[1] driven by constant 1
+WARNING: [Synth 8-3331] design ssDecoder has unconnected port clk
+WARNING: [Synth 8-3331] design ssDecoder has unconnected port rst
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 304.414 ; gain = 97.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 304.414 ; gain = 97.195
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'ck0' [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/LAB11.v:49]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/dcp/clk_wiz_0_in_context.xdc] for cell 'ck0'
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/dcp/clk_wiz_0_in_context.xdc] for cell 'ck0'
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:147]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/LAB11_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/src/don't touch/PortDefine_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB11_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB11_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 602.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/dcp/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/synth_1/.Xil/Vivado-5468-UX303L/dcp/clk_wiz_0_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ButtonFSM'
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "switch" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     S_0 |                              000 |                              000
+                     S_1 |                              001 |                              001
+                     S_2 |                              010 |                              010
+                     S_3 |                              011 |                              011
+                     S_4 |                              100 |                              100
+                     S_5 |                              101 |                              101
+                     S_6 |                              110 |                              110
+                     S_7 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ButtonFSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 38    
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 57    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ButtonFSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module BP_TimerController 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 53    
+Module ssDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 4     
+Module ssDisplayer 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "tc1/switch" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design LAB11 has port led[1] driven by constant 1
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 602.453 ; gain = 395.234
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 602.453 ; gain = 395.234
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ck0/clk_out1' to pin 'ck0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |     5|
+|3     |LUT1      |    17|
+|4     |LUT2      |     6|
+|5     |LUT3      |    18|
+|6     |LUT4      |    20|
+|7     |LUT5      |    24|
+|8     |LUT6      |    31|
+|9     |FDCE      |    67|
+|10    |FDPE      |    11|
+|11    |IBUF      |     6|
+|12    |OBUF      |    13|
+|13    |OBUFT     |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------+------+
+|      |Instance           |Module             |Cells |
++------+-------------------+-------------------+------+
+|1     |top                |                   |   234|
+|2     |  bD               |ButtonFSM          |    11|
+|3     |  bL               |ButtonFSM_0        |     7|
+|4     |  bR               |ButtonFSM_1        |     8|
+|5     |  bU               |ButtonFSM_2        |     9|
+|6     |  ss1              |SevenSegment       |    54|
+|7     |    ssdp1          |ssDisplayer        |    54|
+|8     |  tc1              |BP_TimerController |   110|
+|9     |    dff0           |DFF                |     3|
+|10    |    dff1           |DFF_3              |     3|
+|11    |    dff10          |DFF_4              |     2|
+|12    |    dff11          |DFF_5              |     3|
+|13    |    dff12          |DFF_6              |     1|
+|14    |    dff13          |DFF_7              |     2|
+|15    |    dff14          |DFF_8              |     1|
+|16    |    dff15          |DFF_9              |     2|
+|17    |    dff16          |DFF_10             |     1|
+|18    |    dff17          |DFF_11             |     4|
+|19    |    dff18          |DFF_12             |     3|
+|20    |    dff19          |DFF_13             |     1|
+|21    |    dff2           |DFF_14             |     3|
+|22    |    dff20          |DFF_15             |     1|
+|23    |    dff21          |DFF_16             |     1|
+|24    |    dff22          |DFF_17             |     1|
+|25    |    dff23          |DFF_18             |     1|
+|26    |    dff24          |DFF_19             |     1|
+|27    |    dff25          |DFF_20             |     7|
+|28    |    dff26          |DFF_21             |     2|
+|29    |    dff27          |DFF_22             |     2|
+|30    |    dff28          |DFF_23             |     7|
+|31    |    dff3           |DFF_24             |     2|
+|32    |    dff4           |DFF_25             |     2|
+|33    |    dff5           |DFF_26             |     2|
+|34    |    dff6           |DFF_27             |     2|
+|35    |    dff7           |DFF_28             |     1|
+|36    |    dff8           |DFF_29             |     3|
+|37    |    dff9           |DFF_30             |     1|
+|38    |    dff_p          |DFF_31             |     7|
+|39    |    nolabel_line91 |DFF_32             |    27|
+|40    |    nolabel_line92 |DFF_33             |     2|
+|41    |    nolabel_line93 |DFF_34             |     3|
+|42    |    nolabel_line94 |DFF_35             |     1|
+|43    |    nolabel_line95 |DFF_36             |     1|
+|44    |    nolabel_line96 |DFF_37             |     1|
+|45    |    nolabel_line97 |DFF_38             |     1|
+|46    |    nolabel_line98 |DFF_39             |     2|
++------+-------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 602.453 ; gain = 395.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 602.453 ; gain = 97.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 602.453 ; gain = 395.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 104 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 602.453 ; gain = 395.234
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 602.453 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 30 16:08:01 2016...
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)

@@ -1,0 +1,448 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Nov 04 17:01:21 2016
+# Process ID: 912
+# Current directory: C:/Users/Albert/Desktop/logic  design/lab_hw6/lab_hw6.runs/synth_1
+# Command line: vivado.exe -log LAB6.vds -mode batch -messageDb vivado.pb -notrace -source LAB6.tcl
+# Log file: C:/Users/Albert/Desktop/logic  design/lab_hw6/lab_hw6.runs/synth_1/LAB6.vds
+# Journal file: C:/Users/Albert/Desktop/logic  design/lab_hw6/lab_hw6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LAB6.tcl -notrace
+Command: synth_design -top LAB6 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 272.848 ; gain = 65.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB6' [C:/Users/Albert/Desktop/logic  design/lab_hw6/LAB6_2.v:3]
+WARNING: [Synth 8-3848] Net led in module/entity LAB6 does not have driver. [C:/Users/Albert/Desktop/logic  design/lab_hw6/LAB6_2.v:8]
+INFO: [Synth 8-256] done synthesizing module 'LAB6' (1#1) [C:/Users/Albert/Desktop/logic  design/lab_hw6/LAB6_2.v:3]
+WARNING: [Synth 8-3917] design LAB6 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[1]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[0]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 310.234 ; gain = 103.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 310.234 ; gain = 103.043
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Albert/Desktop/logic  design/lab_hw6/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB6_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB6_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 591.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LAB6 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design LAB6 has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design LAB6 has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design LAB6 has port dp driven by constant 1
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[1]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port led[0]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[14]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design LAB6 has unconnected port sw[4]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 591.105 ; gain = 383.914
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 591.105 ; gain = 383.914
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |    21|
+|4     |LUT5   |     7|
+|5     |FDCE   |    20|
+|6     |IBUF   |     6|
+|7     |OBUF   |    12|
+|8     |OBUFT  |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    88|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 591.105 ; gain = 103.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 591.105 ; gain = 383.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 97 Warnings, 38 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 591.105 ; gain = 383.914
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 591.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 04 17:01:58 2016...

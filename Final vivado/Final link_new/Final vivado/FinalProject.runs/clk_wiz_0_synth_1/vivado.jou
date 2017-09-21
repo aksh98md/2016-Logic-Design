@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Sep 19 10:30:31 2016
+# Process ID: 6380
+# Current directory: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

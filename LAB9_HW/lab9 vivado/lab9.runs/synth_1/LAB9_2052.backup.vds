@@ -1,0 +1,163 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 09 17:22:24 2016
+# Process ID: 2052
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/synth_1
+# Command line: vivado.exe -log LAB9.vds -mode batch -messageDb vivado.pb -notrace -source LAB9.tcl
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/synth_1/LAB9.vds
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LAB9.tcl -notrace
+Command: synth_design -top LAB9 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13620 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module INV [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:14]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:38]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:51]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR3 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:63]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR4 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:75]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:87]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND3 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:99]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND4 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:111]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:124]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR3 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:137]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR4 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:150]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XOR2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:162]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XNOR2 [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:174]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 284.527 ; gain = 76.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB9' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/LAB9.v:8]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/synth_1/.Xil/Vivado-2052-UX303L/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/lab9.runs/synth_1/.Xil/Vivado-2052-UX303L/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'ck0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/LAB9.v:48]
+INFO: [Synth 8-638] synthesizing module 'ButtonFSM' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/ButtonFSM.v:7]
+	Parameter S_0 bound to: 3'b000 
+	Parameter S_1 bound to: 3'b001 
+	Parameter S_2 bound to: 3'b010 
+	Parameter S_3 bound to: 3'b011 
+	Parameter S_4 bound to: 3'b100 
+	Parameter S_5 bound to: 3'b101 
+	Parameter S_6 bound to: 3'b110 
+	Parameter S_7 bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/ButtonFSM.v:41]
+INFO: [Synth 8-256] done synthesizing module 'ButtonFSM' (2#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/ButtonFSM.v:7]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:20]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:84]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'FA' (3#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:5]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:86]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:187]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (4#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/lib.v:187]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:88]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:90]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:92]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:94]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:96]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:98]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:100]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:102]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:104]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:106]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:108]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:110]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:112]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:114]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:116]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:118]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:120]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:122]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:124]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:126]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:129]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:131]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:133]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:135]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:137]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:139]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:141]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:143]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:145]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:147]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:149]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:151]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:153]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:155]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:157]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:159]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:161]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:163]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:165]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:167]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:169]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:171]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:173]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:175]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:177]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:179]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:181]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:183]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (5#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/Timer.v:20]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/SevenSegment.v:7]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (6#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/SevenSegment.v:7]
+WARNING: [Synth 8-3848] Net led in module/entity LAB9 does not have driver. [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/LAB9.v:21]
+INFO: [Synth 8-256] done synthesizing module 'LAB9' (7#1) [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/LAB9.v:8]
+WARNING: [Synth 8-3331] design Timer has unconnected port set
+WARNING: [Synth 8-3331] design Timer has unconnected port new_sec[3]
+WARNING: [Synth 8-3331] design Timer has unconnected port new_sec[2]
+WARNING: [Synth 8-3331] design Timer has unconnected port new_sec[1]
+WARNING: [Synth 8-3331] design Timer has unconnected port new_sec[0]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[15]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[14]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[13]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[12]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[11]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[10]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[9]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[8]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[7]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[6]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[5]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[4]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[3]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[2]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[1]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port led[0]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[8]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[7]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[6]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[5]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[4]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[3]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[2]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[1]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port sw[0]
+WARNING: [Synth 8-3331] design LAB9 has unconnected port btnR
+WARNING: [Synth 8-3331] design LAB9 has unconnected port btnL
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 303.434 ; gain = 95.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 303.434 ; gain = 95.184
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'ck0' [C:/Users/Albert/Desktop/logic  design/LAB9_HW/lab9 vivado/src/dont touch/LAB9.v:48]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1

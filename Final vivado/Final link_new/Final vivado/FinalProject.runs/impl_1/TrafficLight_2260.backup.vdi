@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Sep 19 11:10:55 2016
+# Process ID: 2260
+# Current directory: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1
+# Command line: vivado.exe -log TrafficLight.vdi -applog -messageDb vivado.pb -mode batch -source TrafficLight.tcl -notrace
+# Log file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1/TrafficLight.vdi
+# Journal file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TrafficLight.tcl -notrace
+Command: open_checkpoint TrafficLight_opt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 207.910 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1

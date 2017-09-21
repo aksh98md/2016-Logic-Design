@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Sep 19 11:08:41 2016
+# Process ID: 3404
+# Current directory: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1
+# Command line: vivado.exe -log TrafficLight.vdi -applog -messageDb vivado.pb -mode batch -source TrafficLight.tcl -notrace
+# Log file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1/TrafficLight.vdi
+# Journal file: D:/TADuty/105-1 Flip Logic Design/LAB Doc/Final/FinalProject/FinalProject.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TrafficLight.tcl -notrace

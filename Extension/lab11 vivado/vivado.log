@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jan 13 12:43:04 2017
+# Process ID: 14500
+# Current directory: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16068 C:\Users\Albert\Desktop\logic  design\FINAL_EXTENSION\lab11 vivado\EXTENDSION vivado.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 762.383 ; gain = 103.539
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jan 13 12:43:37 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jan 13 12:43:57 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A284C1A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A284C1A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A284C1A
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/LAB11.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A284C1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A284C1A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/LAB11.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jan 13 12:50:29 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/synth_1/runme.log
+[Fri Jan 13 12:50:29 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jan 13 12:50:52 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/synth_1/runme.log
+[Fri Jan 13 12:50:52 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+[0x7FFB6D9E70E3] ANOMALY: use of REX.w is meaningless (default operand size is 64)
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 931.773 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A284C1A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A284C1A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A284C1A
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/LAB11.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/LAB11.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Jan 13 12:55:21 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Jan 13 12:56:27 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/synth_1/runme.log
+[Fri Jan 13 12:56:27 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/EXTENDSION vivado.runs/impl_1/LAB11.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/dcp/LAB11_early.xdc]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/dcp/LAB11_early.xdc]
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/dcp/LAB11.xdc]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/dcp/LAB11.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1099.637 ; gain = 0.020
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1108.840 ; gain = 108.219
+INFO: [Common 17-344] 'open_run' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: LAB11
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module INV [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:14]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:38]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:51]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR3 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:63]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module OR4 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:75]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:87]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND3 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:99]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NAND4 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:111]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:124]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR3 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:137]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module NOR4 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:150]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XOR2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:162]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module XNOR2 [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:174]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:6]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:04 ; elapsed = 00:45:02 . Memory (MB): peak = 1108.840 ; gain = 901.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LAB11' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/LAB11.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/.Xil/Vivado-14500-UX303L/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'ck0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/LAB11.v:54]
+INFO: [Synth 8-638] synthesizing module 'ButtonFSM' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ButtonFSM.v:7]
+	Parameter S_0 bound to: 3'b000 
+	Parameter S_1 bound to: 3'b001 
+	Parameter S_2 bound to: 3'b010 
+	Parameter S_3 bound to: 3'b011 
+	Parameter S_4 bound to: 3'b100 
+	Parameter S_5 bound to: 3'b101 
+	Parameter S_6 bound to: 3'b110 
+	Parameter S_7 bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ButtonFSM.v:41]
+INFO: [Synth 8-256] done synthesizing module 'ButtonFSM' (2#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ButtonFSM.v:7]
+INFO: [Synth 8-638] synthesizing module 'BP_TimerController' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:8]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:48]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:187]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (3#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/lib.v:187]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:49]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:50]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:51]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:52]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:53]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:54]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:55]
+INFO: [Synth 8-256] done synthesizing module 'BP_TimerController' (4#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/BP_TimerController.v:8]
+WARNING: [Synth 8-689] width (16) of port connection 'led' does not match port width (15) of module 'BP_TimerController' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/LAB11.v:63]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/SevenSegment.v:6]
+INFO: [Synth 8-638] synthesizing module 'ssDecoder' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ssDecoder.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ssDecoder' (5#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ssDecoder.v:5]
+INFO: [Synth 8-638] synthesizing module 'ssDisplayer' [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ssDisplayer' (6#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/ssDisplayer.v:5]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (7#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/SevenSegment.v:6]
+WARNING: [Synth 8-3848] Net led0 in module/entity LAB11 does not have driver. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/LAB11.v:32]
+INFO: [Synth 8-256] done synthesizing module 'LAB11' (8#1) [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/LAB11.v:6]
+WARNING: [Synth 8-3917] design LAB11 has port led[15] driven by constant 0
+WARNING: [Synth 8-3331] design ssDecoder has unconnected port clk
+WARNING: [Synth 8-3331] design ssDecoder has unconnected port rst
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[14]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[13]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[12]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[11]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[10]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[9]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port led[8]
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port btnU
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port btnD
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port btnL
+WARNING: [Synth 8-3331] design BP_TimerController has unconnected port btnR
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[13]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[12]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[11]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[10]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[9]
+WARNING: [Synth 8-3331] design LAB11 has unconnected port sw[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:05 ; elapsed = 00:45:03 . Memory (MB): peak = 1123.051 ; gain = 915.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:06 ; elapsed = 00:45:04 . Memory (MB): peak = 1123.051 ; gain = 915.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'ck0'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'ck0/inst'
+Finished Parsing XDC File [c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'ck0/inst'
+Parsing XDC File [c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'ck0/inst'
+Finished Parsing XDC File [c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'ck0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LAB11_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LAB11_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'vgaRed[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'vgaBlue[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[0]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[1]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[2]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vgaGreen[3]'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'Hsync'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'Vsync'. [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc:147]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Albert/Desktop/logic  design/FINAL_EXTENSION/lab11 vivado/src/don't touch/PortDefine_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/LAB11_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:20 ; elapsed = 00:45:13 . Memory (MB): peak = 1285.398 ; gain = 1077.992
+28 Infos, 64 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1285.398 ; gain = 176.559
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 13 13:35:59 2017...

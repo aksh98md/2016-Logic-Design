@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 16 18:45:51 2016
+# Process ID: 3112
+# Current directory: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8496 D:\Dropbox\共享\FlipLD\課前準備\LAB文件\Final Project\Final link\Final vivado\FinalProject.xpr
+# Log file: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado/vivado.log
+# Journal file: D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/Final link/Final vivado/FinalProject.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Dropbox/共享/FlipLD/課前準備/LAB文件/Final Project/FinalProject' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 817.621 ; gain = 162.066
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 16 18:51:01 2016...

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 08 23:21:39 2016
+# Process ID: 4248
+# Current directory: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7324 C:\Users\Albert\Desktop\logic  design\LAB7 link\lab7 vivado\LAB7 vivado.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/LAB7 link/lab7 vivado/LAB7 vivado.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/LAB7/SSDR.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/LAB7/don't touch/ssDisplayer.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/LAB7/don't touch/LAB7.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/lib.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Albert/Desktop/logic  design/LAB7 link/共享/FlipLD/課前準備/LAB文件/LAB7/LAB7 link/LAB7 prob/PortDefine_basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP 'clk_wiz_0' shares a common output directory with other IP. It is recommended that each IP be placed in its own directory.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 757.855 ; gain = 101.020
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 08 23:27:29 2016...

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Checkpoint Version="5" Minor="0">
+	<BUILD_NUMBER Name="1577090"/>
+	<FULL_BUILD Name="SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016"/>
+	<PRODUCT Name="Vivado v2016.2 (64-bit)"/>
+	<Part Name="xc7a35tcpg236-1"/>
+	<Top Name="LAB8"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<File Type="XDC_EARLY" Name="LAB8_early.xdc" ModTime="1482769425"/>
+	<File Type="XDC" Name="LAB8.xdc" ModTime="1482769425"/>
+	<File Type="SHAPE" Name="LAB8.shape" ModTime="1482769425"/>
+	<File Type="EDIF" Name="LAB8.edf" ModTime="1482769425"/>
+	<File Type="VERILOG_STUB" Name="LAB8_stub.v" ModTime="1482769425"/>
+	<File Type="VHDL_STUB" Name="LAB8_stub.vhdl" ModTime="1482769425"/>
+	<File Type="XN" Name="LAB8.xn" ModTime="1482769426"/>
+	<File Type="XDEF" Name="LAB8.xdef" ModTime="1482769426"/>
+	<File Type="INCR" Name="LAB8.incr" ModTime="1482769426"/>
+	<File Type="RDA" Name="LAB8.rda" ModTime="1482769426"/>
+	<File Type="REPLAY" Name="LAB8_iPhysOpt.tcl" ModTime="1482769426"/>
+	<File Type="WDF" Name="LAB8.wdf" ModTime="1482769426"/>
+</Checkpoint>
+

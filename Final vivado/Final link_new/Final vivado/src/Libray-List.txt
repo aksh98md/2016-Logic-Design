@@ -1,0 +1,33 @@
+Class1: Inverter
+INV(in1, out1): out1 = in1'
+
+Class2: AND gate
+AND2(A,B,Y)     :2-input AND, Y = AB
+AND3(A,B,C,Y)   :3-input AND, Y = ABC
+AND4(A,B,C,D,Y) :4-input AND, Y = ABCD
+
+Class3: OR gate
+OR2(A,B,Y)      :2-input OR,  Y = A+B
+OR3(A,B,C,Y)    :3-input OR,  Y = A+B+C
+OR4(A,B,C,D,Y)  :4-input OR,  Y = A+B+C+D
+
+Class4: NAND gate
+NAND2(A,B,Y)    :2-input NAND, Y = (AB)'
+NAND3(A,B,C,Y)  :3-input NAND, Y = (ABC)'
+NAND4(A,B,C,D,Y):4-input NAND, Y = (ABCD)'
+
+Class5: NOR gate
+NOR2(A,B,Y)     :2-input NOR,  Y = (A+B)'
+NOR3(A,B,C,Y)   :3-input NOR,  Y = (A+B+C)'
+NOR4(A,B,C,D,Y) :4-input NOR,  Y = (A+B+C+D)'
+
+Class6: XOR2/XNOR2
+XOR2(A,B,Y)     :2-input XOR,  Y = A'B+AB'
+XNOR2(A,B,Y)    :2-input XNOR, Y = AB+A'B'
+
+Class7: D flip flop, positive edge, asynchronous positive reset,, reset to H or L according to HL
+DFF(Q,D,CLK,RESET,HL): D Flip Flop, if(RESET==1) Q=HL, else Q=D at positive CLK edge
+
+Class8: Multiplexer (MUX)
+MUX21(SEL,A,B,Y)    :2-to-1 MUX, if(SEL==1)  Y=A, else Y=B
+MUX41(SEL,A,B,C,D,Y):4-to-1 MUX, if(SEL==00) Y=A, SEL==01 Y=B, SEL==10 Y=C, SEL==11 Y=D

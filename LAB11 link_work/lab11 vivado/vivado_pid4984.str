@@ -1,0 +1,183 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 4984
+
+Current time: 	12/23/16 4:09:51 PM CST
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=PMingLiU,name=·s²Ó©úÅé,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Albert
+User home directory: C:/Users/Albert
+User working directory: C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Albert/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Albert/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	226 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 420 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Albert\Desktop\logic  design\LAB11 link_work\lab11 vivado\LAB11 vivado.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.xpr} 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 39 MB (+38572kb) [00:00:08]
+// [Engine Memory]: 408 MB (+276318kb) [00:00:08]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 44 MB (+2525kb) [00:00:11]
+// [Engine Memory]: 501 MB (+76445kb) [00:00:11]
+// [GUI Memory]: 48 MB (+2134kb) [00:00:14]
+// Tcl Message: open_project {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Dropbox/LAB11 vivado' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 526 MB. GUI used memory: 33 MB. Current time: 12/23/16 4:09:58 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: LAB11 vivado; location: C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado; part: xc7a35tcpg236-1
+// [GUI Memory]: 52 MB (+2099kb) [00:00:19]
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 801.988 ; gain = 145.668 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 538 MB (+12148kb) [00:01:12]
+// [GUI Memory]: 55 MB (+229kb) [00:02:03]
+// Elapsed time: 127 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LAB11 (LAB11.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (clk_wiz_0.xci) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LAB11 (LAB11.v), ck0 - clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LAB11 (LAB11.v), ck0 - clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// [Engine Memory]: 586 MB (+22021kb) [00:02:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 35 MB. Current time: 12/23/16 4:12:13 PM CST
+// [Engine Memory]: 621 MB (+6209kb) [00:02:35]
+// p:g (cv:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+// [GUI Memory]: 58 MB (+693kb) [00:02:39]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cR:g (F:JPanel, p:g)
+// [GUI Memory]: 67 MB (+6336kb) [00:02:44]
+// [GUI Memory]: 72 MB (+668kb) [00:02:49]
+// Elapsed time: 24 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "25000000.000"); // O:ao (cS:N, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// K:y (p:g): Error Found: addNotify
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK"); // a:JButton (JPanel:JComponent, K:y)
+dismissDialog("Error Found"); // K:y (p:g)
+setText("CLKOUT1 REQUESTED OUT FREQ", "25.000"); // O:ao (cS:N, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 662 MB (+10686kb) [00:03:15]
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// bL:g (p:g):  Re-customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {36.500} CONFIG.CLKOUT1_JITTER {181.828} CONFIG.CLKOUT1_PHASE_ERROR {104.359}] [get_ips clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bL:g (p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 47 MB. Current time: 12/23/16 4:12:58 PM CST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  {{C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run clk_wiz_0_synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 2 clk_wiz_0_synth_1 
+// Tcl Message: [Fri Dec 23 16:13:19 2016] Launched clk_wiz_0_synth_1... Run output will be captured here: C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.runs/clk_wiz_0_synth_1/runme.log 
+// Tcl Message: INFO: [Vivado 12-4357] Exporting simulation files for 'clk_wiz_0'... please wait for 'clk_wiz_0_synth_1' run to finish... 
+// Tcl Message: wait_on_run clk_wiz_0_synth_1 
+// Tcl Message: [Fri Dec 23 16:13:19 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:13:24 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:13:29 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:13:34 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:13:44 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:13:54 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:14:04 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// Tcl Message: [Fri Dec 23 16:14:15 2016] Waiting for clk_wiz_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Fri Dec 23 16:14:20 2016] clk_wiz_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:01:00 . Memory (MB): peak = 928.734 ; gain = 0.000 
+// Tcl Message: export_simulation -of_objects [get_files {{C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.ip_user_files} -ipstatic_source_dir {C:/Users/Albert/Desktop/logic  design/LAB11 link_work/lab11 vivado/LAB11 vivado.ip_user_files/ipstatic} -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 71 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// [Engine Memory]: 704 MB (+8346kb) [00:05:39]
+// HMemoryUtils.trashcanNow. Engine heap size: 707 MB. GUI used memory: 47 MB. Current time: 12/23/16 4:15:24 PM CST
+// [GUI Memory]: 75 MB (+328kb) [00:11:05]
+// [GUI Memory]: 80 MB (+873kb) [00:14:02]
+// [GUI Memory]: 86 MB (+2148kb) [00:20:28]
+// [GUI Memory]: 91 MB (+301kb) [00:27:39]

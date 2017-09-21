@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Dec 08 23:20:32 2016
+# Process ID: 3224
+# Current directory: C:/Users/Albert/Desktop/logic  design/lab_hw6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7776 C:\Users\Albert\Desktop\logic  design\lab_hw6\lab_hw6.xpr
+# Log file: C:/Users/Albert/Desktop/logic  design/lab_hw6/vivado.log
+# Journal file: C:/Users/Albert/Desktop/logic  design/lab_hw6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Albert/Desktop/logic  design/lab_hw6/lab_hw6.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 770.297 ; gain = 115.617
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 08 23:21:22 2016...
