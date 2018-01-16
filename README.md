@@ -1,4 +1,6 @@
-# 2016-Logic-Design
+# Logic Design
+
+NTU 2016 Fall Semester
 
 Class: 交換電路與邏輯設計 Switching Circuit and Logic Design
 
